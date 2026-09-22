@@ -79,7 +79,7 @@ This project is designed to practice professional development workflows includin
 ## Contributing
 
 This is a learning project for practicing collaborative development workflows. Follow the assignment instructions for contributing to this repository.
-
+This project showcases version control and CI/CD skills.
 ## License
 
 This project is for educational purposes.
