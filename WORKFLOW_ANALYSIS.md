@@ -27,7 +27,10 @@ It removes human error and inconsistency — the same checks (HTML validation, l
 checking) run identically every time, and deployment only happens automatically if 
 all checks pass. There's also a full audit log of every deploy (who, when, what 
 changed, pass/fail status), which manual deployment doesn't guarantee since it 
-depends on someone remembering every step correctly each time.
+depends on someone remembering every step correctly each time. For example, if a developer manually deploys and forgets to run the HTML validator, 
+a broken page could go live unnoticed. With this workflow, that same mistake would 
+cause the `build-and-test` job to fail, blocking the deploy step entirely and 
+notifying the team immediately — no broken page ever reaches production.
 
 ## 6. What would happen if you pushed code to a different branch (not main)?
 Nothing would deploy. Since the trigger is scoped to the `main` branch, pushes to 
